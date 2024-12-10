@@ -98,5 +98,10 @@ int	main(void)
 	else
 		printf("different return !!!!!!!!!!!!!!!!!!\n\n");
 
+	if (printf("All at once! wheeeee:	%c %s %p %s %p %d %i %u %x %X\n",c, s, s, NULL, NULL, d, i, u, x, X) == ft_printf("All at once! wheeeee:	%c %s %p %s %p %d %i %u %x %X\n",c, s, s, NULL, NULL, d, i, u, x, X))
+		printf("same return\n\n");
+	else
+		printf("different return !!!!!!!!!!!!!!!!!!\n\n");
+
 	printf("---------Done!---------\n");
 }
