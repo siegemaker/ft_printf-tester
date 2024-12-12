@@ -6,7 +6,7 @@ all: $(NAME)
 $(NAME):
 	@make -s -C ..
 	@cc -w TESTER.c ../libftprintf.a -o $(NAME)
-	@./$(NAME)
+	@valgrind ./$(NAME)
 	@make -s fclean
 
 clean:
